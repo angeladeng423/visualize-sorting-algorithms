@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment1.assignment1.SortingHubController">
+   <children>
+      <Pane fx:id="pane" layoutX="20.0" layoutY="22.0" prefHeight="300.0" prefWidth="762.0" style="-fx-background-color: E5E4E2; -fx-border-color: black; -fx-border-width: 1;" />
+      <Label layoutX="21.0" layoutY="347.0" text="Algorithm" />
+      <Slider fx:id="slider" blockIncrement="0.0" layoutX="291.0" layoutY="349.0" max="128.0" min="32.0" prefHeight="14.0" prefWidth="315.0" value="64.0" />
+      <Label layoutX="235.0" layoutY="346.0" text="Array Size" />
+      <Label fx:id="tracker" layoutX="618.0" layoutY="347.0" text="64" />
+      <Button fx:id="sortButton" layoutX="654.0" layoutY="342.0" mnemonicParsing="false" onAction="#setSortStrategy" prefHeight="25.0" prefWidth="62.0" text="Sort" />
+      <Button fx:id="resetButton" layoutX="724.0" layoutY="342.0" mnemonicParsing="false" onAction="#resetPressed" prefHeight="25.0" prefWidth="62.0" text="Reset" />
+      <ComboBox fx:id="comboBox" layoutX="85.0" layoutY="343.0" prefHeight="25.0" prefWidth="138.0" promptText="Merge Sort" />
+   </children>
+</AnchorPane>
